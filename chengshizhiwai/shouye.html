@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>首页</title>
+	<style>
+	@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;1,100&display=swap');
+	* {
+	  margin: 0;
+	  padding: 0;
+	  font-family: 'Poppins', sans-serif;
+	}
+	.container {
+	  width: 100%;
+	  height: 100vh;
+	  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/background.png);
+	  background-position: center;
+	  background-size: cover;
+	  padding-left: 8%;
+	  padding-right: 8%;
+	  box-sizing: border-box;
+	}
+	.navbar {
+	  height: 12%;
+	  display: flex;
+	  align-items: center;
+	}
+	.logo {
+	  width: 50px;
+	  cursor: pointer;
+	}
+	.menu-icon {
+	  width: 30px;
+	  cursor: pointer;
+	  margin-left: 40px;
+	}
+	nav {
+	  flex: 1;
+	  text-align: right;
+	}
+	nav ul li {
+	  list-style: none;
+	  display: inline-block;
+	  margin-left: 60px;
+	}
+	nav ul li a {
+	  text-decoration: none;
+	  color: #fff;
+	  font-size: 13px;
+	}
+	.row {
+	  display: flex;
+	  height: 88%;
+	  align-items: center;
+	}
+	.col {
+	  flex-basis: 50%;
+	}
+	h1 {
+	  color: #fff;
+	  font-size: 100px;
+	}
+	p {
+	  color: #fff;
+	  font-size: 11px;
+	  line-height: 15px;
+	}
+	button {
+	  width: 180px;
+	  color: #000;
+	  font-size: 12px;
+	  padding: 12px 0;
+	  background: #fff;
+	  border: 0;
+	  border-radius: 20px;
+	  outline: none;
+	  margin-top: 30px;
+	  cursor: pointer;
+	}
+	.card{
+	  width: 240px;
+	  height: 230px;
+	  display: inline-block;
+	  border-radius: 10px;
+	  padding: 15px 25px;
+	  box-sizing: border-box;
+	  cursor:pointer;
+	  margin: 10px 15px;
+	  background-position: center;
+	  background-size: cover;
+	  transition: transform 0.5s;
+	}
+	 .card1{
+	  background-image: url(img/pic-1.png);
+	 }
+	 .card2{
+	  background-image: url(img/pic-2.png);
+	 }
+	 .card3{
+	  background-image: url(img/pic-3.png);
+	 }
+	 .card4{
+	  background-image: url(img/pic-4.png);
+	 }
+	 .card:hover{
+	   transform: translateY(-10px);
+	 }
+	 h5{
+	   color: #fff;
+	   text-shadow: 0 0 5px #999;
+	 }
+	 .card p{
+	   text-shadow:  0 0 5px #000;
+	   font-size: 8px;
+	 }
+	</style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <img src="img/logo.png" class="logo" />
+        <nav>
+          <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">REGION</a></li>
+            <li><a href="#">ABOUT</a></li>
+          </ul>
+        </nav>
+        <img src="img/menu.png" class="menu-icon" />
+      </div>
+      <div class="row">
+        <div class="col">
+          <h1>城市之外</h1>
+          <p>
+            大力发展休闲农业和乡村旅游休闲农业、乡村旅游，扶持休闲农业与乡村旅游业的发展。
+          </p>
+          <button type="button">了解更多</button>
+        </div>
+        <div class="col">
+          <div class="card1 card">
+            <h5>路线规划</h5>
+            <p>定制路线、随即路线、自制路线</p>
+          </div>
+          <div class="card2 card">
+            <h5>平台服务</h5>
+            <p>线上购物服务、线下便利设施服务、线上线下结合打卡</p>
+          </div>
+          <div class="card3 card">
+            <h5>民宿预定</h5>
+            <p>考虑多方面因素，公开透明地选择住宿</p>
+          </div>
+          <div class="card4 card">
+            <h5>出行方式</h5>
+            <p>与当地政府合作，提供司机接送服务</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
